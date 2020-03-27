@@ -1,0 +1,191 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  height: 0;
+  background: #3f3f3f;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  max-width: 70%;
+  margin: auto;
+}
+
+nav {
+  background: #7289da;
+  padding:1%;
+}
+
+nav .navbar {  
+  text-align: center;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+}
+
+ nav .navbar li:after {
+  content: " ──── ";
+  color:#fff;
+} 
+
+nav .navbar #final:after {
+  content: "";
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  padding-right: 2%;
+  padding-left:2%;
+}
+
+
+.jumbotron {
+  background: #7289da;
+}
+
+.jumbotron .main-title {
+  text-align: center;
+}
+
+.jumbotron .main-title img {
+  width: 30%;
+  margin-top: 15px;
+  border-radius: 50%;
+}
+
+.jumbotron .main-title h1 {
+  margin-top: 0px;
+  font-size: 40px;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+}
+
+.jumbotron .invite {
+  text-align: center;
+}
+
+.invite {
+  padding-bottom: 5%;
+}
+
+.invite a {
+  font-size: 30px;
+ 
+}
+
+.btn-invite {
+  height: 50px;
+  padding: 8px 100px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.28);
+  border-radius: 100px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  position: relative;
+  transition: all 300ms ease;
+  bottom: 0;
+  background: #fff;
+  color: #7289da;
+  text-decoration: none;
+}
+.btn-invite:hover {
+  bottom: 10px;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.28);
+}
+
+.jumbotron-commands {
+  background: #282b30;
+}
+
+.title h1 {
+  text-align: center;
+  padding:10%;
+  margin-top: 0px;
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(220, 220, 220);
+}
+
+table {
+  margin: auto;
+}
+
+.command-table {  
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  border: 1px solid #000;
+  padding-bottom: 100px;
+}
+
+.command-table th {
+  text-transform: uppercase;
+}
+
+.command-table th, td {
+  text-align: left;
+  padding:16px;
+}
+
+.command-table tr {
+  background-color: #fff;
+}
+
+.command-table tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.jumbotron-server {
+  background: #282b30;
+  padding-bottom: 5%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex:50%;
+}
+
+.column img {
+ margin-left: 20%;
+}
+
+.cl-text {
+  text-align: center;
+  color: #fff;
+}
+
+footer {  
+  background: #7289da;
+  margin: 0;
+  text-align: center;
+  padding: 3%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: rgb(0, 0, 0);
+}
+
+footer ul li {
+  list-style: none;
+  display: inline;
+  padding: 5%;
+  font-size: 25px;
+  color: rgb(226, 226, 226);
+}
+
+footer ul li::before {
+  content: "> ";
+  color: rgb(39, 42, 46);
+}
