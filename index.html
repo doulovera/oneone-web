@@ -13,9 +13,9 @@
 	<nav>
 		<section class="navbar">
 			<ul>
-				<li><a href="#">Invite</a></li>
-				<li><a href="#commands">Commands</a></li>
-				<li id="final"><a href="#server">Server</a></li>
+				<li><a target="_blank" href="https://discordapp.com/oauth2/authorize?client_id=675130426943209484&scope=bot&permissions=8">Invitar</a></li>
+				<li><a href="#commands">Comandos</a></li>
+				<li id="final"><a href="#server">Servidor</a></li>
 			</ul>
 		</section>
 	</nav>
@@ -24,47 +24,96 @@
 	<section class="jumbotron">
 		<div class="main-title">
 			<img src="img/dcoo.png" alt="" draggable="false">
-			<h1>One-One - Bot</h1>
+			<h1>One-One</h1>
 		</div>
 		<div class="invite">
-			<a href="#" class="btn-invite">Invite <i class="fas fa-user-plus"></i></a>
+			<a target="_blank" href="https://discordapp.com/oauth2/authorize?client_id=675130426943209484&scope=bot&permissions=8" class="btn-invite">Invitar <i class="fas fa-user-plus"></i></a>
 		</div>
 	</section>
 
 	<section class="jumbotron-commands" id="commands">
 		<div class="title">
-			<h1 id="commands">Commands</h1>
+			<h1 id="commands">Comandos</h1>
+		</div>
+		<div>
+			<p>Obligatorio: <span>()</span>, Opcional <span>[]</span> | Prefijo determinado: <span>*</span></p>
+			<p></p>
 		</div>
 		<table class="command-table">
 			<tr>
-				<th>Command</th>
-				<th>Description</th>
-				<th>Permission</th>
+				<th>Comando</th>
+				<th class="centered">Descripción</th>
+				<th class="centered">Permiso</th>
+			</tr>
+			<tr>
+				<td>alarm (segundos)</td>
+				<td class="centered">Te envía un recordatorio según el tiempo que pongas</td>
+				<td class="centered">user</td>
+			</tr>
+			<tr>
+				<td>covid [país]</td>
+				<td class="centered">Muestra la información acerca del coronavirus en un país y globalmente</td>
+				<td class="centered">user</td>
+			</tr>
+			<tr>
+				<td>foto [@usuario]</td>
+				<td class="centered">Envía tu foto de perfil o del usuario al que menciones</td>
+				<td class="centered">user</td>
 			</tr>
 			<tr>
 				<td>info</td>
-				<td>Shows bot information</td>
-				<td>user</td>
+				<td class="centered">Información acerca del bot</td>
+				<td class="centered">user</td>
 			</tr>
 			<tr>
-				<td>info</td>
-				<td>Shows bot information</td>
-				<td>user</td>
+				<td>invite</td>
+				<td class="centered">Envía el link de invitación</td>
+				<td class="centered">user</td>
 			</tr>
 			<tr>
-				<td>info</td>
-				<td>Shows bot information</td>
-				<td>user</td>
+				<td>kick (@usuario)</td>
+				<td class="centered">Saca a un usuario de un servidor</td>
+				<td class="centered">kick user</td>
 			</tr>
 			<tr>
-				<td>info</td>
-				<td>Shows bot information</td>
-				<td>user</td>
+				<td>movie (pelicula/serie)</td>
+				<td class="centered">Muestra información de una película o serie de IMDb</td>
+				<td class="centered">user</td>
 			</tr>
 			<tr>
-				<td>info</td>
-				<td>Shows bot information</td>
-				<td>user</td>
+				<td>mc-server (IP)</td>
+				<td class="centered">Muestra los datos de un servidor de minecraft</td>
+				<td class="centered">user</td>
+			</tr>
+			<tr>
+				<td>ping</td>
+				<td class="centered">Muestra el ping del host del bot</td>
+				<td class="centered">user</td>
+			</tr>
+			<tr>
+				<td>poll (Emoji 1) (Emoji 2) (Contenido)</td>
+				<td class="centered">Creas una encuesta</td>
+				<td class="centered">Manage Messages</td>
+			</tr>
+			<tr>
+				<td>serverinfo</td>
+				<td class="centered">Muestra la información del servidor</td>
+				<td class="centered">user</td>
+			</tr>
+			<tr>
+				<td>say (texto)</td>
+				<td class="centered">Envía un texto</td>
+				<td class="centered">Manage Messages</td>
+			</tr>
+			<tr>
+				<td>skin (nickname)</td>
+				<td class="centered">Envía la skin de un usuario en minecraft, y envía link de descarga</td>
+				<td class="centered">user</td>
+			</tr>
+			<tr>
+				<td>steam (juego)</td>
+				<td class="centered">Envía información acerca de un juego en Steam</td>
+				<td class="centered">user</td>
 			</tr>
 		</table>
 		<br>
@@ -74,29 +123,34 @@
 
 	<section class="jumbotron-server" id="server">
 		<div class="title">
-			<h1 id="server">Server</h1>
+			<h1 id="server">Servidor</h1>
 		</div>
 		<div class="row">
 			<div class="column">
 				<img src="img/dcoo.png" alt="" width="300px">
 			</div>
 			<div class="column cl-text">
-				<h2>Join to the server</h2>
-				<p>Use this invitation link to join</p>
-				<a href="#" class="btn-invite">Join!</a>
+				<h2>Únete al servidor</h2>
+				<p>Entra al servidor de discord desde desde este botón abajo.</p>
+				<a href="#" class="btn-invite" onclick="doThis()">Entrar</a>
 			</div>
 		</div>
 	</section>
 
 	<footer>
 		<ul>
-			<li><a href="#">Team</a></li>
-			<li><a href="#">More Projects</a></li>
-			<li>DouLo#0763</li>
+			<li><a href="https://github.com/Dou-Lo" target="_blank">Github</a></li>
+			<li><a href="https://discordapp.com/oauth2/authorize?client_id=700807943473332368&scope=bot&permissions=8" target="_blank">Cloud Bot</a></li>
+			<li><a href="https://twitter.com/_doulo" target="_blank">DouLo#0763</a></li>
 		</ul>
 	</footer>
 
 <script src="https://kit.fontawesome.com/4f7d9715df.js" crossorigin="anonymous"></script>
+<script>
+	function doThis() {
+		alert("Próximamente.")
+	}
+</script>
 </body>
 </html>
 

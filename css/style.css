@@ -103,7 +103,8 @@ nav a {
 
 .title h1 {
   text-align: center;
-  padding:10%;
+  padding-top:10%;
+  padding-bottom: 5%;
   margin-top: 0px;
   font-family: 'Press Start 2P', cursive;
   color: rgb(220, 220, 220);
@@ -113,12 +114,25 @@ table {
   margin: auto;
 }
 
+.jumbotron-commands div {
+  margin-left:11%;
+  color: #fff;
+}
+
+.jumbotron-commands div span {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 20%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .command-table {  
   border-collapse: collapse;
   border-spacing: 0;
   width: 80%;
-  border: 1px solid #000;
   padding-bottom: 100px;
+  color: #f0f3f5;
 }
 
 .command-table th {
@@ -131,11 +145,15 @@ table {
 }
 
 .command-table tr {
-  background-color: #fff;
+  background-color: #36393e;
+}
+
+.command-table tr .centered {
+  text-align: center;
 }
 
 .command-table tr:nth-child(even) {
-  background-color: #f3f3f3;
+  background-color: #282b30;
 }
 
 .jumbotron-server {
@@ -181,7 +199,7 @@ footer ul li {
   list-style: none;
   display: inline;
   padding: 5%;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(226, 226, 226);
 }
 
