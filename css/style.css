@@ -119,12 +119,22 @@ table {
   color: #fff;
 }
 
-.jumbotron-commands div span {
+.jumbotron-commands div kbd {
   background-color: #fff;
   color: #000;
   font-weight: bold;
   border-radius: 20%;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.jumbotron-commands .table-title th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.jumbotron-commands tr th {
+  font-weight: lighter;
+  text-transform: lowercase;
 }
 
 .command-table {  
@@ -206,4 +216,86 @@ footer ul li {
 footer ul li::before {
   content: "> ";
   color: rgb(39, 42, 46);
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+
+  body {
+    max-width: 100%;
+    margin:none;
+  }
+
+  .jumbotron .main-title img {
+    width: 50%;
+  }
+
+  header {
+    display: none;
+  }
+
+  .btn-invite {
+    height: 50px;
+    padding: 8px 100px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.28);
+    border-radius: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    position: relative;
+    background: #fff;
+    color: #7289da;
+    text-decoration: none;
+  }
+
+  .btn-invite:hover {
+    bottom: 0px;
+  }
+
+  .jumbotron-commands .text {
+    font-size: 20px;
+  }
+
+  .command-table {
+    width: 90%;
+  }
+
+  .command-table td, .table-title, .text span {
+    display:none;
+  }
+
+  .command-table tr th::before {
+    content: '*';
+  }
+
+  table tr th {
+    display: contents;
+    font-size: 20px;
+    margin-left: 100px;
+  }
+
+  .command-table tr {
+    background-color: #282b30;
+  }
+  
+  .command-table tr:nth-child(even) {
+    background-color: #36393e;
+  }
+
+  .jumbotron-server {
+    display:none;
+  }
+
+  footer ul li {
+    display: block;
+    text-align: left;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  footer ul li {
+    display:inline;
+  }
 }
