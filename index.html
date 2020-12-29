@@ -1,159 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="img/oneone.png" type="image/x-icon">
-	<title>One-One Bot</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto&display=swap" rel="stylesheet">
-	<!-- Open Graph tags -->
-	<meta property="og:title" content="One-One | Discord Bot">
-	<meta property="og:image" content="https://i.imgur.com/cTQmQx2.png">
-	<!-- Twitter Cards tags -->
-	<meta name=”twitter:card” content=”summary”>
-	<meta name=”twitter:title” content=”One-One Discord Bot”>
-	<meta name="twitter:image" content="https://i.imgur.com/cTQmQx2.png">
-	<meta name="twitter:creator" content="@_doulo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneOne</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
+    <section class="section_main">
+        <img src="img/oneone.png" alt="OneOne" id="oneone">
+        <h1>OneOne</h1>
+        <a href="https://discord.com/oauth2/authorize?client_id=675130426943209484&scope=bot&permissions=8" class="btn btn-invite">Invitar <i class="fas fa-user-plus"></i></a>
+        <div class="data">
+            <h4>Servidores: <span id="servers">...</span></h4>
+            <h4>Comandos: <span id="users">...</span></h4>
+        </div>
+    </section>
 
-	<header>
-	<nav>
-		<section class="navbar">
-			<ul>
-				<li><a target="_blank" href="https://discordapp.com/oauth2/authorize?client_id=675130426943209484&scope=bot&permissions=8">Invitar</a></li>
-				<li><a href="#commands">Comandos</a></li>
-				<li id="final"><a href="#server">Servidor</a></li>
-			</ul>
-		</section>
-	</nav>
-	</header>
+    <section class="section_commands">
+        <h2>Comandos</h2>
+        <div id="loader"></div>
+        <table id="commands_table">
+            <tr>
+            </tr>
+        </table>
+    </section>
 
-	<section class="jumbotron">
-		<div class="main-title">
-			<img src="img/dcoo.png" alt="" draggable="false">
-			<h1>One-One</h1>
-		</div>
-		<div class="invite">
-			<a target="_blank" href="https://discordapp.com/oauth2/authorize?client_id=675130426943209484&scope=bot&permissions=8" class="btn-invite">Invitar <i class="fas fa-user-plus"></i></a>
-		</div>
-	</section>
+    <section class="section_server_invitation">
+        <div class="server_invitation">
+            <div class="server_invitarion_text">
+                <h2>Noobas WebObject <i class="fab fa-discord"></i></h2>
+                <p>Es un servidor de discord para compartir y conocer más sobre nuestro equipo y la creación de nuestros proyectos.</p>
+                <a href="#" class="btn btn-server-invitation">Entrar</a>
+            </div>
+        </div>
+    </section>
 
-	<section class="jumbotron-commands" id="commands">
-		<div class="title">
-			<h1 id="commands">Comandos</h1>
-		</div>
-		<div class="text">
-			<p>Obligatorio: <kbd>()</kbd>, Opcional <kbd>[]</kbd><span>| Prefijo determinado: <kbd>*</kbd></span></p>
-		</div>
-		
-		<table class="command-table">
-			<tr class="table-title">
-				<th>Comando</th>
-				<th class="centered">Descripción</th>
-				<th class="centered">Permiso</th>
-			</tr>
-			<tr>
-				<th>covid [país]</th>
-				<td class="centered">Muestra la información acerca del coronavirus en un país y globalmente</td>
-				<td class="centered">user</td>
-			</tr>
-			<tr>
-				<th>foto [@usuario]</th>
-				<td class="centered">Envía tu foto de perfil o del usuario al que menciones</td>
-				<td class="centered">user</td>
-			</tr>
-			<tr>
-				<th>info</th>
-				<td class="centered">Información acerca del bot</td>
-				<td class="centered">user</td>
-			</tr>
-			<tr>
-				<th>invite</th>
-				<td class="centered">Envía el link de invitación</td>
-				<td class="centered">user</td>
-			</tr>
-			<tr>
-				<th>kick (@usuario)</th>
-				<td class="centered">Saca a un usuario de un servidor</td>
-				<td class="centered">kick user</td>
-			</tr>
-			<tr>
-				<th>movie (pelicula/serie)</th>
-				<td class="centered">Muestra información de una película o serie de IMDb</td>
-				<td class="centered">user</td>
-			</tr>
-			<tr>
-				<th>mc-server (IP)</th>
-				<td class="centered">Muestra los datos de un servidor de minecraft</td>
-				<td class="centered">user</td>
-			</tr>
-			<tr>
-				<th>ping</th>
-				<td class="centered">Muestra el ping del host del bot</td>
-				<td class="centered">user</td>
-			</tr>
-			<tr>
-				<th>poll (Emoji 1) (Emoji 2) (Contenido)</th>
-				<td class="centered">Creas una encuesta</td>
-				<td class="centered">Manage Messages</td>
-			</tr>
-			<tr>
-				<th>serverinfo</th>
-				<td class="centered">Muestra la información del servidor</td>
-				<td class="centered">user</td>
-			</tr>
-			<tr>
-				<th>say (texto)</th>
-				<td class="centered">Envía un texto</td>
-				<td class="centered">Manage Messages</td>
-			</tr>
-			<tr>
-				<th>skin (nickname)</th>
-				<td class="centered">Envía la skin de un usuario en minecraft, y envía link de descarga</td>
-				<td class="centered">user</td>
-			</tr>
-			<tr>
-				<th>steam (juego)</th>
-				<td class="centered">Envía información acerca de un juego en Steam</td>
-				<td class="centered">user</td>
-			</tr>
-		</table>
-		<br>
-		<br>
-		<br>
-	</section>
+    <footer>
+        <p><a href="https://twitter.com/doulovera" target="_blank">Douglas Lovera</a>.<br>&#169; Todos los derechos reservados.</p>
+    </footer>
 
-	<section class="jumbotron-server" id="server">
-		<div class="title">
-			<h1 id="server">Servidor</h1>
-		</div>
-		<div class="row">
-			<div class="column">
-				<img src="img/server.jpg" alt="" width="300px">
-			</div>
-			<div class="column cl-text">
-				<h2>Únete al servidor</h2>
-				<p>Entra al servidor de discord desde desde este botón abajo.</p>
-				<a href="#" class="btn-invite" onclick="doThis()">Entrar</a>
-			</div>
-		</div>
-	</section>
-
-	<footer>
-		<ul>
-			<li><a href="https://github.com/Dou-Lo" target="_blank">Github</a></li>
-			<li><a href="https://doulo.now.sh/" target="_blank">DouLo</a></li>
-			<li><a href="https://twitter.com/_doulo" target="_blank">Twitter</a></li>
-		</ul>
-	</footer>
-
-<script src="https://kit.fontawesome.com/4f7d9715df.js" crossorigin="anonymous"></script>
-<script>
-	function doThis() {
-		alert("Próximamente.")
-	}
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>

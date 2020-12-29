@@ -1,301 +1,153 @@
-html {
-  margin: 0px;
-  padding: 0px;
-  height: 0;
-  background-image: url('https://i.imgur.com/GqZocbV.png');
-  font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    /* outline: solid 1px red !important; */
 }
 
 body {
-  max-width: 70%;
-  margin: auto;
+    background-image: url('/img/stars.jpg');
+    background-size: 40%;
+    max-width: 45em;
+    margin: auto;
+    box-shadow: 10px 0px 20px 1px #000,
+                -10px 0px 20px 1px #000;
 }
 
-nav {
-  background: #7289da;
-  padding:1%;
+.btn {
+    padding: 3px 70px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    position: relative;
+    transition: all 300ms ease;
+    bottom: 0;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-nav .navbar {  
-  text-align: center;
+.btn i {
+    color: #000;
 }
 
-nav li {
-  list-style: none;
-  display: inline;
+.btn:hover {
+    bottom: 3px;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.28);
 }
 
- nav .navbar li:after {
-  content: " ──── ";
-  color:#fff;
-} 
-
-nav .navbar #final:after {
-  content: "";
+.section_main {
+    background-color: #7289da;
+    padding: 10px 0px;
 }
 
-nav a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
-  padding-right: 2%;
-  padding-left:2%;
+.section_main h1 {
+    font-size: 3em;
 }
 
-
-.jumbotron {
-  background: #7289da;
-}
-
-.jumbotron .main-title {
-  text-align: center;
-}
-
-.jumbotron .main-title img {
-  width: 30%;
-  margin-top: 15px;
-  border-radius: 50%;
-}
-
-.jumbotron .main-title h1 {
-  margin-top: 0px;
-  font-size: 40px;
-  font-family: 'Press Start 2P', cursive;
-  color: #fff;
-}
-
-.jumbotron .invite {
-  text-align: center;
-}
-
-.invite {
-  padding-bottom: 5%;
-}
-
-.invite a {
-  font-size: 30px;
- 
+#oneone {
+    border-radius: 50%;
+    width: 10em;
 }
 
 .btn-invite {
-  height: 50px;
-  padding: 8px 100px;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.28);
-  border-radius: 100px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 24px;
-  position: relative;
-  transition: all 300ms ease;
-  bottom: 0;
-  background: #fff;
-  color: #7289da;
-  text-decoration: none;
-}
-.btn-invite:hover {
-  bottom: 10px;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.28);
-}
-
-.jumbotron-commands {
-  background: #282b30;
-}
-
-.title h1 {
-  text-align: center;
-  padding-top:10%;
-  padding-bottom: 5%;
-  margin-top: 0px;
-  font-family: 'Press Start 2P', cursive;
-  color: rgb(220, 220, 220);
-}
-
-table {
-  margin: auto;
-}
-
-.jumbotron-commands .text {
-  margin-left:11%;
-  color: #fff;
-}
-
-.jumbotron-commands div kbd {
-  background-color: #fff;
-  color: #000;
-  font-weight: bold;
-  border-radius: 20%;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.jumbotron-commands .table-title th {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.jumbotron-commands tr th {
-  font-weight: lighter;
-  text-transform: lowercase;
-}
-
-.command-table {  
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 80%;
-  padding-bottom: 100px;
-  color: #f0f3f5;
-}
-
-.command-table th {
-  text-transform: uppercase;
-}
-
-.command-table th, td {
-  text-align: left;
-  padding:16px;
-}
-
-.command-table tr {
-  background-color: #36393e;
-}
-
-.command-table tr .centered {
-  text-align: center;
-}
-
-.command-table tr:nth-child(even) {
-  background-color: #282b30;
-}
-
-.jumbotron-server {
-  background: #282b30;
-  padding-bottom: 5%;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-}
-
-.column {
-  flex:50%;
-}
-
-.column img {
- margin-left: 20%;
-}
-
-.cl-text {
-  text-align: center;
-  color: #fff;
-}
-
-footer {  
-  background: #7289da;
-  margin: 0;
-  text-align: center;
-  padding: 3%;
-}
-
-footer a {
-  text-decoration: none;
-  color: #fff;
-}
-
-footer a:hover {
-  color: rgb(0, 0, 0);
-}
-
-footer ul li {
-  list-style: none;
-  display: inline;
-  padding: 5%;
-  font-size: 20px;
-  color: rgb(226, 226, 226);
-}
-
-footer ul li::before {
-  content: "> ";
-  color: rgb(39, 42, 46);
-}
-
-/* Responsive */
-
-@media only screen and (max-width: 768px) {
-
-  body {
-    max-width: 100%;
-    margin:none;
-  }
-
-  .jumbotron .main-title img {
-    width: 50%;
-  }
-
-  header {
-    display: none;
-  }
-
-  .btn-invite {
-    height: 50px;
-    padding: 8px 100px;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.28);
-    border-radius: 100px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 24px;
-    position: relative;
-    background: #fff;
+    padding: 10px 70px;
     color: #7289da;
-    text-decoration: none;
-  }
+}
 
-  .btn-invite:hover {
-    bottom: 0px;
-  }
-
-  .jumbotron-commands .text {
-    font-size: 20px;
-  }
-
-  .command-table {
-    width: 90%;
-  }
-
-  .command-table td, .table-title, .text span {
-    display:none;
-  }
-
-  .command-table tr th::before {
-    content: '*';
-  }
-
-  table tr th {
-    display: contents;
-    font-size: 20px;
-    margin-left: 100px;
-  }
-
-  .command-table tr {
-    background-color: #282b30;
-  }
-  
-  .command-table tr:nth-child(even) {
-    background-color: #36393e;
-  }
-
-  .jumbotron-server {
-    display:none;
-  }
-
-  footer ul li {
-    display: block;
-    text-align: left;
-  }
+.btn-invite i {
+    color: #7289da;
 
 }
 
-@media only screen and (min-width: 600px) {
-  footer ul li {
-    display:inline;
-  }
+.data {
+    margin: 1em;
+}
+
+.data span {
+    color: #7289da;
+}
+
+.data h4 {
+    display: inline-block;
+    background-color: #282b30;
+    padding: 4px 5px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    box-shadow: -3px 3px #181818;
+}
+
+.section_commands, .section_server_invitation {
+    background-color: #282b30;
+    padding: 10px 0px;
+}
+
+section h2 {
+    padding: 0 0 20px 0;
+}
+
+/* section server invitation */
+.server_invitation {
+    width: 90%;
+    padding: 3em 0;
+    margin: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/noobas_large-white.jpg');
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+}
+
+.server_invitation_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#server {
+    width: 10em;
+    border-radius: 5px;
+    border: 4px solid #fff;
+}
+
+
+/* Commands table */
+table {
+    margin: auto;
+    text-align: left;
+    border-collapse: collapse;
+    width: 80%;
+    border-spacing: 100px;
+}
+
+table td, table th {
+    padding: 0.75em;
+    vertical-align: top;
+    border-top: 1px solid #fff;
+}
+
+table th {
+    display: table-cell;
+}
+
+table td {
+    text-align: left;
+}
+
+
+footer {
+    background-color: #7289da;
+    padding: 2em;
 }
