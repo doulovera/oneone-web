@@ -74,10 +74,15 @@ header img {
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
+    transition: all .3s;
 }
 
 .header__container-button i {
     padding-left: 5px;
+}
+
+.header__container-button:hover {
+    background-color: #A5EBEB;
 }
 
 main {
@@ -90,7 +95,8 @@ main {
     display: flex;
     height: auto;
     overflow-x: scroll;
-    padding: 45px 10px 45px 10px;
+    padding: 45px 10px 15px 10px;
+    margin: 0 0 30px;
 }
 
 .main__info-card {
@@ -129,4 +135,118 @@ main {
     left: calc(50% - 15px);
     font-size: 2.4rem;
     color: #3C4983;
+}
+
+.main__commands {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: var(--soft-black);
+}
+
+.main__commands .isotipo-icon {
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 21px);
+    width: 42px;
+    height: 40px;
+    background-image: url('../assets/icons/logo_no_bg.svg');
+}
+
+.main__commands-part {
+    width: 80%;
+    min-width: 260px;
+    max-width: 900px;
+    padding: 35px 0 35px;
+    margin: 0 auto;
+}
+
+.main__commands-part h2 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--soft-white);
+}
+
+/*
+
+Commands table
+
+*/
+
+.main__server {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    min-height: 280px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/somosdevs.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.main__server h2 {
+    padding: 40px 0;
+    font-size: 2.2rem;
+    color: var(--soft-white);
+}
+
+.main__server--body {
+    margin: 0 auto;
+    width: 280px;
+    min-width: 250px;
+    max-width: 900px;
+    font-size: 1.4rem;
+}
+
+.main__server--body a {
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 62px);
+    padding: 10px 45px;
+    border-radius: 5px;
+    background-color: var(--soft-white);
+    color: var(--just-black);
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    height: 161px;
+    background-color: var(--primary-purple);
+}
+
+.footer__first {
+    padding-top: 30px;
+    display: flex;
+}
+
+.footer__first div {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__first .right ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+    text-align: right;
+}
+
+footer .right li a {
+    margin: 10px 0;
+    text-decoration: underline;
+    color: var(--just-white);
+}
+
+footer .copyright-thing p {
+    margin: 2em 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--just-white);
 }
