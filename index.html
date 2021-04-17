@@ -50,10 +50,36 @@
         </section>
         <section class="main__commands">
             <span class="isotipo-icon"></span>
-            <div class="main__commands-part">
-                <h2>Comandos</h2>
-                <h2><u>Próximamente...</u></h2>
-            </div>
+            <h2>Comandos</h2>
+            
+            <section class="main__commands-collapse--container">
+                <button type="button" class="main__commands-collapse--button" id="cmd-bot-btn">
+                    Comandos del Bot <span class="chevron-down-icon"></span>
+                </button>
+                <div class="main__commands-data--container hidden" id="cmd-bot-info"></div>
+            </section>
+
+            <section class="main__commands-collapse--container">
+                <button type="button" class="main__commands-collapse--button" id="cmd-info-btn">
+                    Comandos de Información <span class="chevron-down-icon"></span>
+                </button>
+                <div class="main__commands-data--container hidden" id="cmd-info-info"></div>
+            </section>
+
+            <section class="main__commands-collapse--container">
+                <button type="button" class="main__commands-collapse--button" id="cmd-mod-btn">
+                    Comandos de Moderación <span class="chevron-down-icon"></span>
+                </button>
+                <div class="main__commands-data--container hidden" id="cmd-mod-info"></div>
+            </section>
+            
+            <section class="main__commands-collapse--container">
+                <button type="button" class="main__commands-collapse--button" id="cmd-fun-btn">
+                    Comandos de Diversión <span class="chevron-down-icon"></span>
+                </button>
+                <div class="main__commands-data--container hidden" id="cmd-fun-info"></div>
+            </section>
+
         </section>
         <section class="main__server">
             <h2>SomosDevs</h2>
@@ -80,5 +106,6 @@
         </section>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="./js/commands.js"></script>
 </body>
 </html>

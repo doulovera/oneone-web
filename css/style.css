@@ -137,11 +137,15 @@ main {
     color: #3C4983;
 }
 
+/* Command */
+
 .main__commands {
     position: relative;
+    padding: 45px 0 40px;
     width: 100%;
     height: auto;
     background-color: var(--soft-black);
+    color: var(--soft-white);
 }
 
 .main__commands .isotipo-icon {
@@ -153,28 +157,73 @@ main {
     background-image: url('../assets/icons/logo_no_bg.svg');
 }
 
-.main__commands-part {
-    width: 80%;
-    min-width: 260px;
-    max-width: 900px;
-    padding: 35px 0 35px;
+.main__commands h2 {
+    padding: 0 0 25px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.main__commands-collapse--container {
+    padding: 10px 0;
+    width: 298px;
+    min-width: 298px;
+    max-width: 400px;
+    height: auto;
     margin: 0 auto;
 }
 
-.main__commands-part h2 {
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 700;
+.main__commands-collapse--button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #222222;
+    border: none;
+    outline: none;
     color: var(--soft-white);
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
 }
 
-/*
+.main__commands-collapse--button::after {
+    content: '\f078';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
 
-Commands table
+.activeIcon::after {
+    content: '\f077';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
 
-*/
+.main__commands-data-container {
+    padding: 15px 30px;
+    background-color: #222222;
+    border: 1px solid #333333;
+}
 
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.main__commands-data--title {
+    padding: 3px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.main__commands-data--body {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Server */
 .main__server {
     position: relative;
     width: 100%;
