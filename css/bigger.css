@@ -1,0 +1,20 @@
+.main__info {
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.main__commands--container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .hidden {
+        display: inline;
+    }
+
+    .activeContent {
+        display: none;
+    }
+}
