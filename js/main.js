@@ -4,16 +4,12 @@ const commandsSpan = document.getElementById("commands_number");
 // Command section
 const commandContainer = document.getElementsByClassName('main__commands-data--container');
 
-// Loading icon
-// document.getElementById('loader').innerHTML = '<img src="https://s.svgbox.net/loaders.svg?ic=three-dots&fill=fff" width="32" height="32" draggable="false">'
-
-const oneoneData = 'https://dc-one-one.herokuapp.com/'
+const oneoneData = 'https://oneone-api.herokuapp.com/V210419'
 fetch(oneoneData)
     .then(res => res.json())
     .then(data => {
 
         const { total, servers } = data;
-        // const { bot, info, mod, fun } = data.commands;
         const cmds = data.commands;
 
         serverSpan.innerHTML = servers;
