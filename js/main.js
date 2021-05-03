@@ -19,12 +19,12 @@ fetch(oneoneData)
 
         for(let i = 0; i < commandContainer.length; i++) {
             cmds[categories[i]].map(command => {
-                const article = document.createElement('article');
+            const article = document.createElement('article');
                 article.innerHTML = `
                     <p class="main__commands-data--title">${command.name}</p>
                     <p class="main__commands-data--body">${command.description}</p>
                 `;
-                article.className= "main__commands-data-container";
+                article.className = "main__commands-data-container";
                 commandContainer[i].appendChild(article);
             })
 }})

@@ -81,7 +81,7 @@ header img {
     padding-left: 5px;
 }
 
-.header__container-button:hover {
+.header__container-button:hover, .main__server--button:hover {
     background-color: #A5EBEB;
 }
 
@@ -224,6 +224,10 @@ main {
     font-weight: 700;
 }
 
+.main__commands-data--title:before {
+    content: '*'
+}
+
 .main__commands-data--body {
     font-size: 1.4rem;
     font-weight: 300;
@@ -256,7 +260,7 @@ main {
     font-size: 1.4rem;
 }
 
-.main__server--body a {
+.main__server--button {
     position: absolute;
     bottom: 40px;
     left: calc(50% - 62px);
@@ -265,6 +269,7 @@ main {
     background-color: var(--soft-white);
     color: var(--just-black);
     text-decoration: none;
+    transition: all .3s;
 }
 
 footer {

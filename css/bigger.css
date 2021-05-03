@@ -9,6 +9,14 @@
     margin: 0 auto;
 }
 
+footer .right ul {
+    display: flex;
+}
+
+footer .right li {
+    padding: 0 10px;
+}
+
 @media (min-width: 1200px) {
     .hidden {
         display: inline;
