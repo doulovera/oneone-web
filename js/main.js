@@ -1,1 +1,0 @@
-location.href = 'https://discord.gg/Pc7CtmgUk2';
