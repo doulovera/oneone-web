@@ -1,0 +1,8 @@
+.server__hero {
+  height: 300px;
+  border-radius: 15px;
+  background-image: linear-gradient(#00000033, #00000033), url('/images/discord_skeleton.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #00000010;
+}

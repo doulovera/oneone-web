@@ -3,21 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🤖OneOne Bot</title>
+    <title>OneOne Bot</title>
   </head>
   <body>
     <header>
-      <div class="header__image">
-        <img src="/images/oneone.png" alt="OneOne logo">
+      <div class="header__container">
+        <div class="header__image">
+          <img src="/images/oneone.png" alt="OneOne logo" width="40px">
+        </div>
+        <nav class="header__nav">
+          <a href="#">Invitar</a>
+          <a href="#commands">Comandos</a>
+          <a href="#server">Servidor</a>
+        </nav>
       </div>
-      <nav>
-        <a href="#">Invitar</a>
-        <a href="#commands">Comandos</a>
-        <a href="#server">Servidor</a>
-      </nav>
     </header>
     <main>
-      <section class="hero"></section>
+      <section class="hero">
+        <h1 class="hero__title">OneOne 🤖</h1>
+        <p class="hero__description">
+          Un simple y poderoso Bot de discord para aportar con la eficiencia de tu servidor de discord.
+        </p>
+        <div class="hero__ctas">
+          <a href="#" class="cta__button btn__invite">
+            ¡Invítame a tu servidor!
+          </a>
+        </div>
+      </section>
       <div id="app"></div>
     </main>
     <script type="module" src="/src/main.ts"></script>
