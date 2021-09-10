@@ -1,7 +1,8 @@
 import './Server.styles.css'
 
 export default function Server() {
-  return /*html*/`<section class="server__hero">
+  return /*html*/`
+  <section class="section server__hero" id="server">
     <div class="server__hero__image">
       <h2 class="server__hero__title">
         AWX

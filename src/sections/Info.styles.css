@@ -1,0 +1,7 @@
+.info__category {
+  display: flex;
+}
+
+.info__category-odd {
+  flex-direction: row-reverse;
+}
