@@ -1,8 +1,44 @@
 .server__hero {
-  height: 300px;
+  height: 250px;
+  padding: 0 10px;
+}
+
+.server__hero__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   border-radius: 15px;
-  background-image: linear-gradient(#00000033, #00000033), url('/images/discord_skeleton.png');
+  height: 100%;
+  background-image: linear-gradient(#00000099, #00000099), url('/images/discord_skeleton.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #00000010;
+  color: #fff;
+}
+
+.server__hero__title {
+  padding: 0 20px;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.server__hero__description {
+  margin: 10px 0 30px;
+  font-size: 1.8rem;
+}
+
+.join-server {
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  border: 2px solid;
+  border-radius: 6px;
+  border-color: #fff;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: background-color 0.5s ease;
+}
+
+.join-server:hover {
+  background-color: #ffffff33;
 }
