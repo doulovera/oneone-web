@@ -14,12 +14,12 @@
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+  text-align: center;
 }
 
 .server__hero__title {
   padding: 0 20px;
   font-size: 2.2rem;
-  text-align: center;
 }
 
 .server__hero__description {
