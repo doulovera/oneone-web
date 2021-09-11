@@ -39,6 +39,7 @@ section.section {
 h2.section__title {
   font-size: 3.5rem;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 header {
@@ -84,8 +85,9 @@ header {
 }
 
 main {
-  margin: 60px auto 0;
+  margin: 80px auto 0;
   max-width: 700px;
+  padding: 0 var(--max-w-padding);
 }
 
 .hero {
@@ -94,7 +96,7 @@ main {
   justify-content: center;
   flex-direction: column;
   height: 300px;
-  margin: 40px;
+  margin: 40px 0;
 }
 
 .hero__title {

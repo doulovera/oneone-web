@@ -7,19 +7,17 @@ interface Props {
   index: number
 }
 
-export default function InfoCategory({ category, index }: Props) {
+export default function InfoCategory({ category }: Props) {
   const { title, description, thumbnail } = category
 
-  const getOdd = index % 2
-
   return /*html*/`
-    <div class="info__category ${getOdd === 1 ? 'info__category-odd' : ''}">
-      <div class="info__category__text">
+    <div class="info__category">
+      <div class="info__category__header">
         <h3>${title}</h3>
-        <p>${description}</p>
+        <img src="${thumbnail}" alt="Settings icon" width="25px" draggable="false" />
       </div>
-      <div class="info__category__image">
-        <img src="${thumbnail}" alt="Settings icon" width="100px" />
+      <div class="info__category__description">
+        <p>${description}</p>
       </div>
     </div>
   `

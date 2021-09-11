@@ -1,10 +1,10 @@
 
 import InfoCategory from './components/InfoCategory'
 import './Info.styles.css'
-import Settings from '../../public/icons/Settings.svg'
-import UserGroup from '../../public/icons/UserGroup.svg'
-import VideoGame from '../../public/icons/VideoGame.svg'
-import Code from '../../public/icons/Code.svg'
+import Settings from '/icons/Settings.svg'
+import UserGroup from '/icons/UserGroup.svg'
+import VideoGame from '/icons/VideoGame.svg'
+import Code from '/icons/Code.svg'
 
 
 const CATEGORIES = [
