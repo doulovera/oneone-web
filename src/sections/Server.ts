@@ -8,7 +8,7 @@ export default function Server() {
         AWX
       </h2>
       <p class="server__hero__description">¡Únete a nuestro servidor de Discord!</p>
-      <a href="#" class="cta__button-outlined join-server">
+      <a href="https://discord.gg/Pc7CtmgUk2" class="cta__button-outlined join-server" target="_blank" rel="noreferrer">
         Unirme
       </a>
     </div>

@@ -1,7 +1,7 @@
 
 import InfoCategory from './components/InfoCategory'
 import './Info.styles.css'
-import Settings from '/icons/Settings.svg'
+import Information from '/icons/Information.svg'
 import UserGroup from '/icons/UserGroup.svg'
 import VideoGame from '/icons/VideoGame.svg'
 import Code from '/icons/Code.svg'
@@ -16,7 +16,7 @@ const CATEGORIES = [
   {
     title: 'Información',
     description: 'Eiusmod velit cupidatat voluptate id magna amet in exercitation ad consequat magna sint irure mollit. Eu quis Lorem nostrud incididunt.',
-    thumbnail: Settings
+    thumbnail: Information
   },
   {
     title: 'Diversión',
@@ -32,8 +32,8 @@ const CATEGORIES = [
 
 export default function Info() {
   return /*html*/`
-    <section class="section info">
-      <h2 class="section__title">Información</h2>
+    <section class="section info" id="utilities">
+      <h2 class="section__title">Utilidades</h2>
       <div class="info__container">
         ${
           CATEGORIES.map((category, index) => InfoCategory({category, index})).join('')

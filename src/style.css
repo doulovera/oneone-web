@@ -119,3 +119,28 @@ main {
   background-color: #5865f2;
   color: #fff;
 }
+
+
+
+/* Footer */
+footer {
+  height: 180px;
+  background-color: #23272a;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footer__container section {
+  width: 350px;
+}
+
+.footer__lists {
+  display: flex;
+  justify-content: flex-end;
+}
