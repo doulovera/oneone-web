@@ -10,22 +10,22 @@ import Code from '/icons/Code.svg'
 const CATEGORIES = [
   {
     title: 'Moderación',
-    description: 'Eiusmod velit cupidatat voluptate id magna amet in exercitation ad consequat magna sint irure mollit. Eu quis Lorem nostrud incididunt.',
+    description: 'Comandos que te ayudarán con el manejo de usuarios y la moderación de tu servidor, minimizando ciertas acciones.',
     thumbnail: UserGroup
   },
   {
     title: 'Información',
-    description: 'Eiusmod velit cupidatat voluptate id magna amet in exercitation ad consequat magna sint irure mollit. Eu quis Lorem nostrud incididunt.',
+    description: 'Comandos que te darán la información de las cosas que te interesen, como juegos en steam, shows de IMDb, datos de tu servidor ¡y más!',
     thumbnail: Information
   },
   {
     title: 'Diversión',
-    description: 'Eiusmod velit cupidatat voluptate id magna amet in exercitation ad consequat magna sint irure mollit. Eu quis Lorem nostrud incididunt.',
+    description: 'Obtención de los datos de cosas específicas como servidor el de un minecraft, una skin, o sencillamente obtener un "uwu" aleatorio.',
     thumbnail: VideoGame
   },
   {
     title: 'Desarrolladores',
-    description: 'Eiusmod velit cupidatat voluptate id magna amet in exercitation ad consequat magna sint irure mollit. Eu quis Lorem nostrud incididunt.',
+    description: 'Herramientas para manejar la eficiencia a la hora de desarrollar en discord, como buscar algún paquete en NPM.',
     thumbnail: Code
   },
 ]
