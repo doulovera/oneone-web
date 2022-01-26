@@ -23,9 +23,11 @@
           <img src="/images/oneone.png" alt="OneOne logo" width="40px">
         </div>
         <nav class="header__nav">
-          <a href="https://discordapp.com/oauth2/authorize?client_id=675130426943209484&scope=bot&permissions=8">Invitar</a>
           <a href="#utilities">Utilidades</a>
           <a href="#server">Servidor</a>
+          <button id="toggleColor">
+            🌗
+          </button>
         </nav>
       </div>
     </header>
@@ -36,13 +38,32 @@
           Un simple y poderoso Bot de discord para aportar con la eficiencia de tu servidor de discord.
         </p>
         <div class="hero__ctas">
-          <a href="https://discordapp.com/oauth2/authorize?client_id=675130426943209484&scope=bot&permissions=8" class="cta__button btn__invite">
+          <a href="https://discordapp.com/oauth2/authorize?client_id=675130426943209484&scope=bot&permissions=8" class="cta__button btn__invite" target="_blank" rel="noreferrer noopener">
             ¡Invítame a tu servidor!
           </a>
         </div>
       </section>
-      <div id="app"></div>
-      <div id="command_list"></div>
+
+      <section class="section what-offers">
+        <h2>¿Qué ofrece?</h2>
+      </section>
+
+      <section class="section commands">
+        <h2>Comandos</h2>
+        <div id="commands"></div>
+      </section>
+      
+      <section class="section server__hero" id="server">
+        <div class="server__hero__image">
+          <h2 class="server__hero__title">
+            AWX
+          </h2>
+          <p class="server__hero__description">¡Únete a nuestro servidor de Discord!</p>
+          <a href="https://discord.gg/Pc7CtmgUk2" class="cta__button-outlined join-server" target="_blank" rel="noreferrer">
+            Unirme
+          </a>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer__container">

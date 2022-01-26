@@ -1,17 +1,16 @@
-import Info from './sections/Info'
-import Server from './sections/Server'
-import CommandList from './sections/CommandList'
-
 import './style.css'
+import './styles/header.css'
+import './styles/server.css'
 
-const app = document.querySelector<HTMLDivElement>('#app')!
-const command_list = document.querySelector<HTMLDivElement>('#command_list')!
+const toggleButton = document.getElementById('toggleColor');
+const body = document.body;
 
+let isDarkMode = true;
 
-app.innerHTML = /*html*/`
-  ${Info()}
-  ${Server()}
-`
+toggleButton?.addEventListener("click", () => {
+  isDarkMode = !isDarkMode;
 
-// Last to render, because of async/await
-// command_list.innerHTML = await CommandList()
+  body.classList.toggle('body_light-mode');
+});
+
+const app = document.querySelector<HTMLDivElement>('#app');

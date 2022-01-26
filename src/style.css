@@ -2,7 +2,27 @@
   --black: #000;
   --white: #fff;
   --background: #fff;
+  
   --max-w-padding: 10px;
+  --content-max-width: 700px;
+
+  --bg-color: #171923;
+  --bg-light: #232535;
+  --font-color: #c5cddb;
+  --font-light: #ffffff;
+
+  --button-color: #fff;
+  --font-color-inverted: #3d3d3d;
+}
+
+.body_light-mode {
+  --bg-color: #ffffff;
+  --bg-light: #dcdaca;
+  --font-color: #3d3d3d;
+  --font-light: #202020;
+
+  --button-color: #5865f2;
+  --font-color-inverted: #ffffff;
 }
 
 * {
@@ -18,18 +38,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.cta__button {
-  padding: 12px 20px;
-  font-size: 1.6rem;
-  color: #000;
-  text-decoration: none;
-  background-color: gray;
-  border-radius: 6px;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.cta__button:hover {
-  opacity: 0.6;
+body {
+  background-color: var(--bg-color);
+  color: var(--font-light);
+  transition: background-color .3s;
 }
 
 section.section {
@@ -42,52 +54,10 @@ h2.section__title {
   margin-bottom: 20px;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  height: 60px;
-  width: 100%;
-  box-shadow: inset 0 -2px 0 #00000010;
-  background-color: var(--background);
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 700px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 var(--max-w-padding);
-}
-
-.header__nav {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-.header__nav a {
-  display: inline-flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 8px;
-  color: #000;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-
-.header__nav a:hover {
-  opacity: 0.6;
-}
-
 main {
-  margin: 80px auto 0;
   max-width: 700px;
-  padding: 0 var(--max-w-padding);
+  padding: 80px var(--max-w-padding);
+  margin: 0 auto;
 }
 
 .hero {
@@ -101,13 +71,13 @@ main {
 
 .hero__title {
   margin-bottom: 15px;
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .hero__description {
   max-width: 460px;
   width: 80%;
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-align: center;
 }
 
@@ -116,11 +86,19 @@ main {
 }
 
 .btn__invite {
-  background-color: #5865f2;
-  color: #fff;
+  padding: 12px 20px;
+  font-size: 2rem;
+  color: var(--font-color-inverted);
+  text-decoration: none;
+  font-weight: 600;
+  background-color: var(--button-color);
+  border-radius: 6px;
+  transition: opacity 0.2s ease-in-out;
 }
 
-
+.btn__invite:hover {
+  opacity: 0.8;
+}
 
 /* Footer */
 footer {
