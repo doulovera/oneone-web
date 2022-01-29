@@ -1,10 +1,6 @@
-:root {
-  --black: #000;
-  --white: #fff;
-  --background: #fff;
-  
-  --max-w-padding: 10px;
-  --content-max-width: 700px;
+:root {  
+  --max-w-padding: 15px;
+  --content-max-width: 900px;
 
   --bg-color: #171923;
   --bg-light: #232535;
@@ -13,6 +9,8 @@
 
   --button-color: #fff;
   --font-color-inverted: #3d3d3d;
+
+  --invert-image: 1;
 }
 
 .body_light-mode {
@@ -23,6 +21,8 @@
 
   --button-color: #5865f2;
   --font-color-inverted: #ffffff;
+
+  --invert-image: 0;
 }
 
 * {
@@ -45,7 +45,12 @@ body {
 }
 
 section.section {
-  margin-bottom: 60px;
+  margin: 60px 0;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 3rem;
 }
 
 h2.section__title {
@@ -55,7 +60,7 @@ h2.section__title {
 }
 
 main {
-  max-width: 700px;
+  max-width: var(--content-max-width);
   padding: 80px var(--max-w-padding);
   margin: 0 auto;
 }
@@ -66,7 +71,7 @@ main {
   justify-content: center;
   flex-direction: column;
   height: 300px;
-  margin: 40px 0;
+  margin: 40px 0 10rem;
 }
 
 .hero__title {

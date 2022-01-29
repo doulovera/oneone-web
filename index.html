@@ -17,11 +17,12 @@
     <meta name="twitter:creator" content="@doulovera">
   </head>
   <body>
+
     <header>
       <div class="header__container">
-        <div class="header__image">
+        <a href="#" class="header__image">
           <img src="/images/oneone.png" alt="OneOne logo" width="40px">
-        </div>
+        </a>
         <nav class="header__nav">
           <a href="#utilities">Utilidades</a>
           <a href="#server">Servidor</a>
@@ -31,6 +32,7 @@
         </nav>
       </div>
     </header>
+
     <main>
       <section class="hero">
         <h1 class="hero__title">OneOne 🤖</h1>
@@ -44,16 +46,22 @@
         </div>
       </section>
 
-      <section class="section what-offers">
+      <!-- <section class="section what-offers">
         <h2>¿Qué ofrece?</h2>
-      </section>
+      </section> -->
 
-      <section class="section commands">
+      <section class="section" id="commands">
         <h2>Comandos</h2>
-        <div id="commands"></div>
+        <div class="commands">
+          <ul class="command-selection">
+            <li id="command-item commands-info">Información</li>
+            <li id="command-item commands-dev">Para developers</li>
+            <li id="command-item commands-bot">Bot</li>
+          </ul>
+        </div>
       </section>
       
-      <section class="section server__hero" id="server">
+      <section class="server__hero" id="server">
         <div class="server__hero__image">
           <h2 class="server__hero__title">
             AWX
@@ -65,6 +73,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <div class="footer__container">
         <section class="footer__brand">
@@ -117,6 +126,7 @@
         </section>
       </div>
     </footer>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

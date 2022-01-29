@@ -1,5 +1,7 @@
 .server__hero {
   height: 250px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .server__hero__image {
@@ -9,11 +11,12 @@
   flex-direction: column;
   border-radius: 15px;
   height: 100%;
-  background-image: linear-gradient(#00000099, #00000099), url('/images/discord_skeleton.png');
+  background-image: linear-gradient(#00000066, #00000066), url('/images/discord_skeleton.png');
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
   text-align: center;
+  filter: invert(var(--invert-image));
 }
 
 .server__hero__title {

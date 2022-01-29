@@ -1,5 +1,6 @@
 import './style.css'
 import './styles/header.css'
+import './styles/commands.css'
 import './styles/server.css'
 
 const toggleButton = document.getElementById('toggleColor');

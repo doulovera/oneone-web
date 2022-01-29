@@ -1,0 +1,15 @@
+.commands {
+  width: 100%;
+  margin: 4rem 0;
+  font-size: 1.8rem;
+  background-color: var(--bg-light);
+  border-radius: 15px;
+}
+
+.command-selection {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.command-item {}
