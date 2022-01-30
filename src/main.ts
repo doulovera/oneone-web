@@ -3,6 +3,8 @@ import './styles/header.css'
 import './styles/commands.css'
 import './styles/server.css'
 
+import commandContent from './sections/commandContent'
+
 const toggleButton = document.getElementById('toggleColor');
 const body = document.body;
 
@@ -14,4 +16,4 @@ toggleButton?.addEventListener("click", () => {
   body.classList.toggle('body_light-mode');
 });
 
-const app = document.querySelector<HTMLDivElement>('#app');
+commandContent();

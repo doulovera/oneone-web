@@ -1,15 +1,63 @@
-.commands {
+#commands {
   width: 100%;
-  margin: 4rem 0;
+  margin: 8rem 0;
   font-size: 1.8rem;
-  background-color: var(--bg-light);
-  border-radius: 15px;
 }
 
-.command-selection {
+.commands {
   display: flex;
   flex-direction: column;
-  list-style: none;
+  max-width: 700px;
+  margin: 3rem auto;
+  background-color: var(--bg-light);
+  border-radius: 15px;
+  border: 2px solid #000;
+  overflow: hidden;
 }
 
-.command-item {}
+.command-item__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 2rem;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+}
+
+.command-item__title:hover {
+  background-color: var(--bg-color);
+}
+
+.command-item__arrow {
+  transition: transform 0.2s;
+}
+
+.command-item__title.active .command-item__arrow {
+  transform: rotate(90deg);
+}
+
+.command-item__content {
+  display: none;
+  padding: 2rem 2rem 2rem 6rem;
+  border-bottom: 2px solid #000;
+}
+
+.command-item__title.active ~ .command-item__content {
+  display: block;
+}
+
+.command-item__content li {
+  margin-bottom: 1.6rem;
+}
+
+.command-item__content li:last-child {
+  margin: 0;
+}
+
+.command-item__content li span {
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.command-item__content li p {
+  display: inline;
+}

@@ -1,7 +1,16 @@
+/* 
+  - s: '390px';
+  - m: '600px';
+  - l: '900px';
+  - xl: '1024px';
+  - xxl: '1400px';
+*/
+
 :root {  
   --max-w-padding: 15px;
   --content-max-width: 900px;
 
+  /* theme */
   --bg-color: #171923;
   --bg-light: #232535;
   --font-color: #c5cddb;
