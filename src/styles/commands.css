@@ -31,6 +31,10 @@
   transition: transform 0.2s;
 }
 
+.command-item__title.active {
+  font-weight: bold;
+}
+
 .command-item__title.active .command-item__arrow {
   transform: rotate(90deg);
 }
@@ -38,7 +42,13 @@
 .command-item__content {
   display: none;
   padding: 2rem 2rem 2rem 6rem;
+  background-color: var(--bg-color);
+  border-left: 2px solid var(--font-color);
   border-bottom: 2px solid #000;
+}
+
+:is(.command-item__title, .command-item__content):last-child {
+  border: 0;
 }
 
 .command-item__title.active ~ .command-item__content {
