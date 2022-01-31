@@ -47,8 +47,8 @@
   border-bottom: 2px solid #000;
 }
 
-:is(.command-item__title, .command-item__content):last-child {
-  border: 0;
+.command-item:last-child .command-item__content {
+  border-bottom: 0;
 }
 
 .command-item__title.active ~ .command-item__content {

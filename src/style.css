@@ -48,9 +48,15 @@ html {
 }
 
 body {
+  min-width: 370px;
   background-color: var(--bg-color);
   color: var(--font-light);
   transition: background-color .3s;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 section.section {
@@ -117,74 +123,53 @@ main {
 /* Footer */
 footer {
   min-height: 180px;
-  background-color: #23272a;
-  color: #fff;
+  padding: 3rem 2rem;
+  background-color: var(--bg-light);
+  color: var(--font-color);
 }
 
-.footer__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 20px 0;
-}
-
-.footer__container section {
-  width: 330px;
+.footer__brand {
+  display: grid;
+  place-content: center;
+  height: 100%;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .footer__brand__title {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 15px;
+  flex-direction: column;
+  margin-bottom: 2rem;
   font-size: 2.4rem;
 }
 
-.footer__brand h5 {
-  font-size: 1.4rem;
-  font-weight: normal;
-  padding-bottom: 20px;
-}
-
-.footer__brand h5 a {
-  text-decoration: underline;
-  color: #fff;
-}
-
-.footer__lists {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-end;
-  font-size: 1.6rem;
-  font-weight: normal;
-}
-
-.footer__lists_list {
-  width: 100px;
-}
-
-.footer__lists_list ul {
-  margin-top: 5px;
-  list-style: none;
-}
-.footer__lists_list li {
-  margin: 5px 0;
-}
-
-.footer__lists a {
-  color: #bbb;
+.footer__brand a {
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  padding: 6px 10px;
+  color: var(--font-light);
   text-decoration: none;
+  background-color: var(--bg-color);
+  border-radius: 12px;
 }
 
-.footer__lists a:hover {
+.footer__brand a:hover {
+  opacity: 0.6;
+}
+
+.footer__brand__links {
+  margin-top: 3.4rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.footer__brand__links a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.footer__brand__links a:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 700px) {
-  .footer__lists {
-    justify-content: flex-start;
-  }
 }
